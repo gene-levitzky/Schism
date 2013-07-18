@@ -1,0 +1,11 @@
+For this assignment you'll need to first download a few more things:
+
+1) Notepad++ (http://notepad-plus-plus.org/news/notepad-6.4.2-release.html)
+
+You'll use this for editing your code.
+
+2) Nodejs (http://nodejs.org/download/)
+
+This is what will run your code. Download the windows bin (.exe) 64-bit version of node.exe, and throw it in the same place where git.exe was (C:\Program Files (x86)\Git\bin).
+
+Secondly, you'll need to finish the exercises in A01.js. To open the file, right click it -> Edit with Notepad++. 
