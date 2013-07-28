@@ -43,15 +43,19 @@ python and java is that in javascript division, /, behaves like normal division 
 
 var x = 5 / 2;
 
-// [5 pts] (1.1) x = ??
+// [5 pts] (1.1) x = 2
+
 
 var y = 5 % 2;
 
-// [5 pts] (1.2) y = ??
+// [5 pts] (1.2) y = 2.5
+
 
 var z = (32 % (1 + (7 % 5))) - 2;
 
-// [10 pts] (1.3) z = ??
+// [10 pts] (1.3) z = 11.33
+
+
 
 /*
 Boolean operators are identical to those in java. For comparing equality, use ==. For inequality, use !=. 
@@ -64,19 +68,19 @@ For comparisons, use >, >=, <=, <. Finally, && is logical "and", || is logical "
 
 var a = !true || (!false && true);
 
-// [5 pts] (2.1) a = ??
+// [5 pts] (2.1) a = true
 
 var b = false || (!false && false) || (true && (false || !false));
 
-// [10 pts] (2.2) b = ??
+// [10 pts] (2.2) b = true
 
 var c = a && b;
 
-// [5 pts] (2.3) c = ??
+// [5 pts] (2.3) c = true
 
 var d = 5 > -18;
 
-// [5 pts] (2.4) d = ??
+// [5 pts] (2.4) d = true
 
 var e = (5 > 4) == ((true == (0 != 1)) || false);
 
@@ -84,7 +88,7 @@ var e = (5 > 4) == ((true == (0 != 1)) || false);
 // Hint2: Replace the inner most parentheses with their boolean (true or false) evaluation. 
 //        Repeat process until a single boolean remains.
 
-// [15 pts] (2.5) e = ??
+// [15 pts] (2.5) e = true
 
 
 
@@ -125,12 +129,12 @@ myArray["albany"] = "new york";
 var array = [true, 0, "random string", 5, 3];
 
 // [5 pts] (3.1) For which indexes, x, would array[x] NOT be a number? 
-// ANS:
+// ANS: 0,2
 
 // For this question, use myArray from above 
 var x = myArray["cat"];
 
-console.log(x); // [5 pts] (3.2) Prints ??
+console.log(x); // [5 pts] (3.2) Prints cute (naturallys)
 
 /***************
 ** EXERCISE 4 *
@@ -139,12 +143,21 @@ console.log(x); // [5 pts] (3.2) Prints ??
 var array = [1, 2, 3, 4];
 var a = (true == (false || !true)) && ((array[2] > (5 / 2)) == true);
 
-// [10 pts] (4.1) a = ??
+// [10 pts] (4.1) a = false
 
 var array = [(4 < (8/3)), (!true || (false || ((2/3 > 0) != false)))];
 var b = (array[0] && (array[0] == array[1]));
 
-// [20 pts] (4.2) b = ??
+// [20 pts] (4.2) b = false
+//Kitten works (hmphs): 
+	// [(4 < 2) --> false
+	// [false, (!true || (false || (false) != false)))]
+	// [false, (!true || (false || false)]
+	// [false, (!true || false)]
+	// [false, false]
+	// var b = (false && (false == false))
+	//		 = (false && true)
+	//		 =  false (hmphs!)
 
 // Hint: First simplify the values inside the array. Replace array[0] and array[1] with their equivalent boolean statements. 
 // then replace. Remember that if x is not equal to y, then x != y is TRUE. 
