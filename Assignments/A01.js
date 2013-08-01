@@ -43,17 +43,17 @@ python and java is that in javascript division, /, behaves like normal division 
 
 var x = 5 / 2;
 
-// [5 pts] (1.1) x = 2
+// [5 pts] (1.1) x = 2.5
 
 
 var y = 5 % 2;
 
-// [5 pts] (1.2) y = 2.5
+// [5 pts] (1.2) y = 1
 
 
 var z = (32 % (1 + (7 % 5))) - 2;
 
-// [10 pts] (1.3) z = 11.33
+// [10 pts] (1.3) z = 0
 
 
 
@@ -135,6 +135,7 @@ var array = [true, 0, "random string", 5, 3];
 var x = myArray["cat"];
 
 console.log(x); // [5 pts] (3.2) Prints cute (naturallys)
+
 
 /***************
 ** EXERCISE 4 *
