@@ -1,3 +1,6 @@
+"GRADE: 100%"
+
+
 break break;
 ///////////////////
 //// VARIABLES ////
